@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <div id="authentication-bar">
+      <%- unless session[:account_id].nil? %>
+        <%= link_to "Sign Out", authentication_path, method: "delete" %>
+      <%- end %>
+    </div>
     <% if flash[:alert] %>
       <div class="flash flash-alert"><%= flash[:alert] %></div>
     <% end %>
