@@ -1,0 +1,9 @@
+<h1>Authenticate</h1>
+<%= form_tag(authentications_path) do %>
+  <label for="credentials[email]">Email</label>
+  <input name="credentials[email]" type="email" required />
+  <label for="credentials[password]">Password</label>
+  <input name="credentials[password]" type="password" required />
+  <br />
+  <input type="submit" />
+<%- end %>
