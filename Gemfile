@@ -6,12 +6,11 @@ gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'webpacker'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
 end
 
 group :development do
